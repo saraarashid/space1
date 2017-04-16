@@ -1,0 +1,35 @@
+javascript:
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+var c = [];
+var z=[];
+myfunction(b,c);
+multiply(b,c,z);
+
+
+ function myfunction(x,z){
+   for(var i=0 ; i<x.length;i++){
+     z[i]=((x[i]*2)/3)+0.5;
+     console.log(z[i]);
+   }
+ }
+ 
+ function multiply(x,y,z){
+   var d=0;
+   for(var i=0 ; i<x.length ; i++)
+     {
+       for(var j=0 ; j<y.length ; j++)
+         {
+          d=x[i]*y[j];
+           z.push(d);
+         }
+   }
+   console.log(z);
+ }
+ 
+ ruby:
+ b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+new=Array.new(12)
+b.each do|value|
+puts new= 10*value-5
+puts value+new
+end
