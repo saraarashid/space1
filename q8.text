@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">
+         function copy_data(val){
+         var a = document.getElementById(val.id).value
+         document.getElementById("copy1").value=a
+         var a = document.getElementById(val.id).value
+         document.getElementById("copy2").value=a
+         var a = document.getElementById(val.id).value
+         document.getElementById("copy3").value=a
+         var a = document.getElementById(val.id).value
+         document.getElementById("copy4").value=a
+         }
+  </script>
+</head>
+<body>
+ <p><strong>Q8:</strong>an HTML page with four paragraphs, and a       text area. As you type into the text area, the same text will      appear in  all of the four paragraphs at the same time as you type.</p>
+
+<input type="text" name ="copy" id="copy_from" onkeyup="copy_data(this)"/><br>
+<input type="text"  id="copy1"/><br>
+<input type="text"  id="copy2"/><br>
+<input type="text"  id="copy3"/><br>
+<input type="text"  id="copy4"/><br>
+</body>
+</html>
