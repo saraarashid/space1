@@ -1,0 +1,24 @@
+javascript:
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+var myArray = new Array(12);
+ myfunction (b);
+ 
+function myfunction (x){
+  for(var i=0 ; i<x.length ;i++){
+    myArray=10*x[i]-5;
+    console.log(myArray+x[i]);
+  
+  }
+} 
+
+ruby:
+
+ b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+ n = Array.new(12)
+ 
+  b.each do |value|
+    puts n=10*value -5 
+    puts value + n
+  
+end
+ 
