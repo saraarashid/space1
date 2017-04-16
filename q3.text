@@ -1,0 +1,34 @@
+Javascript:
+var b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+for(var i=0; i<b.length; i++){
+      if (b[i] %5 === 0) {               //the number is divisible by 5  
+    console.log("ispower "+"="+Math.pow(2,b[i])); //print the number to the power of 2
+    }
+       if (b[i] %10===0) {               //the number is divisible by 10
+      for (var j=0; j <= b[i]; j += 10){ 
+
+    console.log("isstep"+j);                     // the number in steps of 10
+    }
+  }
+     
+    if (b[i] %2 !== 0) {       
+    console.log("isOdd"+"="+b[i]*2);   //  the element is odd, print the number * 2
+    } 
+      if (b[i] %2 === 0){ 
+       b[i]=b[i]-1;
+       console.log("isEven"+"="+b[i]);   //the number is even, print the number minus 1
+       }
+  }
+ 
+Ruby:
+ b= [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+ 
+  b.each do |value| puts value*2 if value.to_f%2!=0
+end
+ b.each do |value| puts value -1 if value.to_f%2==0
+ end 
+  b.each do |value| puts 2**value if value.to_f%5==0
+end
+ b.each do |value| puts value if value.to_f%10==0
+end
+
